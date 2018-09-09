@@ -2,12 +2,11 @@
 	"info": {
 		"_postman_id": "164e17bd-6544-6f36-1c70-2a96bbc33800",
 		"name": "NEO",
-		"description": "The Postman Collection to make NEO RPC calls.\nv2018.9.8\nby dprat0821\nNorchain.io \n",
+		"description": "The Postman Collection to make NEO RPC calls.\nv2018.9.9\nby dprat0821\nnorchain.io \n",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"_postman_id": "212ce365-631d-4f8a-b6a8-f737d62725d5",
 			"name": "getaccountstate",
 			"request": {
 				"method": "GET",
@@ -38,7 +37,29 @@
 			"response": []
 		},
 		{
-			"_postman_id": "c98c7d69-6612-49d1-bd2d-95a30727afc7",
+			"name": "getapplicationlog",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"getapplicationlog\",\n  \"params\": [\"7e3f08a8af4290693184b413ba1d58bede8462cb565baba8ffcc380bf947e317\"],\n  \"id\": 1\n}"
+				},
+				"url": {
+					"raw": "{{TestNet}}",
+					"host": [
+						"{{TestNet}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "getassetstate",
 			"request": {
 				"method": "GET",
@@ -73,7 +94,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "de257a04-e04f-416e-918e-d68bb8684ed7",
 			"name": "getbalance",
 			"request": {
 				"method": "GET",
@@ -104,7 +124,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "a660f85c-d170-4c27-96e9-c807e3fbd111",
 			"name": "getbestblockhash",
 			"request": {
 				"method": "GET",
@@ -138,7 +157,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "077373ae-f4c9-41a0-83c9-e09f106fc12a",
 			"name": "getblock",
 			"request": {
 				"method": "GET",
@@ -173,7 +191,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "cc1e18b9-21e1-4312-bfc9-b68d7060322d",
 			"name": "getblock_byHeight",
 			"request": {
 				"method": "GET",
@@ -208,7 +225,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "0a79a010-b34d-412f-a927-02b161f84b9a",
 			"name": "getblockcount",
 			"request": {
 				"method": "GET",
@@ -242,7 +258,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "a2dcf32e-0af9-4111-b625-7561105bd8f7",
 			"name": "getblockhash",
 			"request": {
 				"method": "GET",
@@ -277,7 +292,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "579f7ef8-88f2-4955-a8ac-78278e513d36",
 			"name": "getblocksysfee",
 			"request": {
 				"method": "GET",
@@ -312,7 +326,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "fecfae91-165c-4a3b-af1d-24c4e7f2f94d",
 			"name": "getconnectioncount",
 			"request": {
 				"method": "GET",
@@ -347,7 +360,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "7f127bcc-6d93-4e2e-a63e-51df8c108392",
 			"name": "getcontractstate",
 			"request": {
 				"method": "POST",
@@ -371,7 +383,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "826cbe1f-a792-4de9-afc2-65ff139b905d",
 			"name": "getstorage",
 			"request": {
 				"method": "POST",
@@ -395,7 +406,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "17c53272-6d6c-4b4e-9111-d0feff706ea9",
 			"name": "getpeers",
 			"request": {
 				"method": "GET",
@@ -430,7 +440,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "a8d958c6-ad25-4722-9445-363c8651bda2",
 			"name": "getversion",
 			"request": {
 				"method": "GET",
@@ -465,7 +474,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "38b137b7-dc28-466e-aa9c-48613cdd841b",
 			"name": "invoke",
 			"request": {
 				"method": "POST",
@@ -489,7 +497,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "677015e4-e4db-472f-9098-e5205d72037f",
 			"name": "invokefunction",
 			"request": {
 				"method": "POST",
@@ -513,7 +520,6 @@
 			"response": []
 		},
 		{
-			"_postman_id": "ea45cb71-c5e2-4f50-b7a2-c584577e7666",
 			"name": "invokescript",
 			"request": {
 				"method": "POST",
@@ -561,13 +567,13 @@
 	],
 	"variable": [
 		{
-			"id": "1bd6c5eb-d559-4f69-91b1-d1ccc3e297ec",
+			"id": "220e347f-0c3f-46a0-9efd-8513d4fdcb08",
 			"key": "TestNet",
 			"value": "https://node1.neocompiler.io",
 			"type": "string"
 		},
 		{
-			"id": "62bc720b-1a99-4ea1-9ef4-db36ba78469f",
+			"id": "e0d71413-4f04-472c-bbde-bcb9929474c8",
 			"key": "TestNetNeoScan",
 			"value": "https://neoscan.neocompiler.io/",
 			"type": "string"
