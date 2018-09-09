@@ -1,0 +1,576 @@
+{
+	"info": {
+		"_postman_id": "164e17bd-6544-6f36-1c70-2a96bbc33800",
+		"name": "NEO",
+		"description": "The Postman Collection to make NEO RPC calls.\nv2018.9.8\nby dprat0821\nNorchain.io \n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "212ce365-631d-4f8a-b6a8-f737d62725d5",
+			"name": "getaccountstate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"getaccountstate\",\n  \"params\": [\"AG5rFM5wtwNfv7FrZh3w1FvChV4Chu7xJ4\"],\n  \"id\": 1\n}"
+				},
+				"url": {
+					"raw": "{{TestNetNeoScan}}/api/main_net/v1/get_balance/AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y",
+					"host": [
+						"{{TestNetNeoScan}}"
+					],
+					"path": [
+						"api",
+						"main_net",
+						"v1",
+						"get_balance",
+						"AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "c98c7d69-6612-49d1-bd2d-95a30727afc7",
+			"name": "getassetstate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{TestNet}}?jsonrpc=2.0&method=getassetstate&params=[\"602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7\"]&id=1",
+					"host": [
+						"{{TestNet}}"
+					],
+					"query": [
+						{
+							"key": "jsonrpc",
+							"value": "2.0"
+						},
+						{
+							"key": "method",
+							"value": "getassetstate"
+						},
+						{
+							"key": "params",
+							"value": "[\"602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7\"]",
+							"description": "[assetID]"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "de257a04-e04f-416e-918e-d68bb8684ed7",
+			"name": "getbalance",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"getbalance\",\n  \"params\": [\"c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b\"],\n  \"id\": 1\n}"
+				},
+				"url": {
+					"raw": "{{TestNetNeoScan}}/api/main_net/v1/get_balance/AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y",
+					"host": [
+						"{{TestNetNeoScan}}"
+					],
+					"path": [
+						"api",
+						"main_net",
+						"v1",
+						"get_balance",
+						"AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "a660f85c-d170-4c27-96e9-c807e3fbd111",
+			"name": "getbestblockhash",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{TestNet}}?jsonrpc=2.0&method=getbestblockhash&params=[]&id=1",
+					"host": [
+						"{{TestNet}}"
+					],
+					"query": [
+						{
+							"key": "jsonrpc",
+							"value": "2.0"
+						},
+						{
+							"key": "method",
+							"value": "getbestblockhash"
+						},
+						{
+							"key": "params",
+							"value": "[]"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "077373ae-f4c9-41a0-83c9-e09f106fc12a",
+			"name": "getblock",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{TestNet}}?jsonrpc=2.0&method=getblock&params=[\"f11012e620810af231cebea061842002168d29bce802a1964edbc082f62aa49a\",\"1\"]&id=1",
+					"host": [
+						"{{TestNet}}"
+					],
+					"query": [
+						{
+							"key": "jsonrpc",
+							"value": "2.0"
+						},
+						{
+							"key": "method",
+							"value": "getblock"
+						},
+						{
+							"key": "params",
+							"value": "[\"f11012e620810af231cebea061842002168d29bce802a1964edbc082f62aa49a\",\"1\"]",
+							"description": "[block_hash,verbose_level(0|1)]"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "cc1e18b9-21e1-4312-bfc9-b68d7060322d",
+			"name": "getblock_byHeight",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{TestNet}}?jsonrpc=2.0&method=getblock&params=[100]&id=1",
+					"host": [
+						"{{TestNet}}"
+					],
+					"query": [
+						{
+							"key": "jsonrpc",
+							"value": "2.0"
+						},
+						{
+							"key": "method",
+							"value": "getblock"
+						},
+						{
+							"key": "params",
+							"value": "[100]",
+							"description": "[block_hash,verbose_level(0|1)]"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "0a79a010-b34d-412f-a927-02b161f84b9a",
+			"name": "getblockcount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{TestNet}}?jsonrpc=2.0&method=getblockcount&params=[]&id=1",
+					"host": [
+						"{{TestNet}}"
+					],
+					"query": [
+						{
+							"key": "jsonrpc",
+							"value": "2.0"
+						},
+						{
+							"key": "method",
+							"value": "getblockcount"
+						},
+						{
+							"key": "params",
+							"value": "[]"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "a2dcf32e-0af9-4111-b625-7561105bd8f7",
+			"name": "getblockhash",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{TestNet}}?jsonrpc=2.0&method=getblockhash&params=[100]&id=1",
+					"host": [
+						"{{TestNet}}"
+					],
+					"query": [
+						{
+							"key": "jsonrpc",
+							"value": "2.0"
+						},
+						{
+							"key": "method",
+							"value": "getblockhash"
+						},
+						{
+							"key": "params",
+							"value": "[100]",
+							"description": "[block_height]"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "579f7ef8-88f2-4955-a8ac-78278e513d36",
+			"name": "getblocksysfee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{TestNet}}?jsonrpc=2.0&method=getblocksysfee&params=[200]&id=1",
+					"host": [
+						"{{TestNet}}"
+					],
+					"query": [
+						{
+							"key": "jsonrpc",
+							"value": "2.0"
+						},
+						{
+							"key": "method",
+							"value": "getblocksysfee"
+						},
+						{
+							"key": "params",
+							"value": "[200]",
+							"description": "[block_hash,verbose_level(0|1)]"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "fecfae91-165c-4a3b-af1d-24c4e7f2f94d",
+			"name": "getconnectioncount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{TestNet}}?jsonrpc=2.0&method=getconnectioncount&params=[]&id=1",
+					"host": [
+						"{{TestNet}}"
+					],
+					"query": [
+						{
+							"key": "jsonrpc",
+							"value": "2.0"
+						},
+						{
+							"key": "method",
+							"value": "getconnectioncount"
+						},
+						{
+							"key": "params",
+							"value": "[]",
+							"description": "[block_hash,verbose_level(0|1)]"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "7f127bcc-6d93-4e2e-a63e-51df8c108392",
+			"name": "getcontractstate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"getcontractstate\",\n  \"params\": [\"e35816a2b6f823a28aa6674ca56c28862fe419f8\"],\n  \"id\": 1\n}"
+				},
+				"url": {
+					"raw": "{{TestNet}}",
+					"host": [
+						"{{TestNet}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "826cbe1f-a792-4de9-afc2-65ff139b905d",
+			"name": "getstorage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"getstorage\",\n  \"params\": [\"7ffaa21916b8f5e637ce487b275be91fa6caacc4\", \"6e616d65\"],\n  \"id\": 15\n}"
+				},
+				"url": {
+					"raw": "{{TestNet}}",
+					"host": [
+						"{{TestNet}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "17c53272-6d6c-4b4e-9111-d0feff706ea9",
+			"name": "getpeers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{TestNet}}?jsonrpc=2.0&method=getpeers&params=[]&id=1",
+					"host": [
+						"{{TestNet}}"
+					],
+					"query": [
+						{
+							"key": "jsonrpc",
+							"value": "2.0"
+						},
+						{
+							"key": "method",
+							"value": "getpeers"
+						},
+						{
+							"key": "params",
+							"value": "[]",
+							"description": "[block_height]"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "a8d958c6-ad25-4722-9445-363c8651bda2",
+			"name": "getversion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{TestNet}}?jsonrpc=2.0&method=getversion&params=[]&id=1",
+					"host": [
+						"{{TestNet}}"
+					],
+					"query": [
+						{
+							"key": "jsonrpc",
+							"value": "2.0"
+						},
+						{
+							"key": "method",
+							"value": "getversion"
+						},
+						{
+							"key": "params",
+							"value": "[]",
+							"description": "[block_height]"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "38b137b7-dc28-466e-aa9c-48613cdd841b",
+			"name": "invoke",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"invoke\",\n  \"params\": [\n\"3d3e76a9496f2f5d2cd8c601bddd8b8683f0a7aa\",\n[\n  {\n    \"type\": \"ByteArray\",\n    \"value\": \"72656164\"\n  },\n  {\n    \"type\":\"ByteArray\",\n    \"value\": \"6e616d65\"\n  },\n  {\n    \"type\":\"ByteArray\",\n    \"value\": \"6e616d65\"\n  }\n]\n  ],\n  \"id\": 1\n}"
+				},
+				"url": {
+					"raw": "{{TestNet}}",
+					"host": [
+						"{{TestNet}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "677015e4-e4db-472f-9098-e5205d72037f",
+			"name": "invokefunction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"invokefunction\",\n  \"params\": [\n\"3d3e76a9496f2f5d2cd8c601bddd8b8683f0a7aa\",\n\"add\",\n[\n  {\n    \"type\": \"ByteArray\",\n    \"value\": \"72656164\"\n  },\n  {\n    \"type\":\"ByteArray\",\n    \"value\": \"6e616d65\"\n  }\n]\n  ],\n  \"id\": 1\n}"
+				},
+				"url": {
+					"raw": "{{TestNet}}",
+					"host": [
+						"{{TestNet}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "ea45cb71-c5e2-4f50-b7a2-c584577e7666",
+			"name": "invokescript",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"invokescript\",\n  \"params\": [\"e35816a2b6f823a28aa6674ca56c28862fe419f8\"],\n  \"id\": 1\n}"
+				},
+				"url": {
+					"raw": "{{TestNet}}",
+					"host": [
+						"{{TestNet}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9fe32eda-3afa-43d4-b2c2-15061ee48310",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f9ffaf1c-c489-431d-90f9-a396505b1ab4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "1bd6c5eb-d559-4f69-91b1-d1ccc3e297ec",
+			"key": "TestNet",
+			"value": "https://node1.neocompiler.io",
+			"type": "string"
+		},
+		{
+			"id": "62bc720b-1a99-4ea1-9ef4-db36ba78469f",
+			"key": "TestNetNeoScan",
+			"value": "https://neoscan.neocompiler.io/",
+			"type": "string"
+		}
+	]
+}
